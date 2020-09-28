@@ -23,7 +23,6 @@ export function createFdpsSubscriptionList(rectanglesMap) {
     // form array of points that correspond to rectangles of subscription coverage on the map
     // the subscription coverage is determined by the decimal point where the "*" wildcard filter symbol is located
     // moving one decimal place to the left corresponds to a factor of 10 growth in the subscription coverage area
-    // see viz here: TODO
     const { templateCols, templateRows } = createSubscriptionGrid_OVERCOVERAGE(
       minLat,
       maxLat,
@@ -131,4 +130,8 @@ export function containedByOneOrMoreRectangleBounds(latLngObj, rectanglesMap) {
     }
   });
   return isContained;
+}
+
+function radiansToDegrees(radians) {
+  return radians * (180 / Math.PI);
 }

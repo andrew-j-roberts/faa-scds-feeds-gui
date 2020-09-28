@@ -63,7 +63,7 @@
       </div>
     {/if}
     {#if $mapCurrentSelection.type == 'marker'}
-      <div>{$mapCurrentSelection.type}</div>
+      <div>Plane selected</div>
     {/if}
   {:else}
     <div class="flex items-center justify-center h-full">

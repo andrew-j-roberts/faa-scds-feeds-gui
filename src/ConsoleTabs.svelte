@@ -13,7 +13,7 @@
   <div class="flex items-center">
     <button
       on:click={() => (focusedOption === 'SELECTION' ? setFocusedOption('NONE') : setFocusedOption('SELECTION'))}
-      class={`${focusedOption == 'SELECTION' ? 'text-blue-600  focus:text-blue-800 focus:border-blue-700 border-blue-500' : 'text-gray-500  hover:text-gray-700 hover:border-gray-300 focus:text-gray-700 focus:border-gray-300'} flex flex-col items-center justify-center p-3 text-xl font-medium border group focus:outline-none rounded-lg`}>
+      class={`${focusedOption == 'SELECTION' ? 'text-blue-600  focus:text-blue-800 focus:border-blue-700 border-blue-500' : 'text-gray-500  hover:text-gray-700 hover:border-gray-300 focus:text-gray-700 focus:border-gray-300'} flex flex-col items-center justify-center p-3 text-xl font-medium border group focus:outline-none rounded-lg w-24`}>
       <svg
         class={`${focusedOption == 'SELECTION' ? 'text-blue-600 focus:text-blue-800 focus:border-blue-700 border-blue-500' : 'text-gray-400 group-hover:text-gray-500 group-focus:text-gray-600'} w-8 h-8`}
         fill="none"
@@ -27,6 +27,23 @@
           2.122m-5.657 5.656l-2.12 2.122" />
       </svg>
       <span>Inspect</span>
+    </button>
+    <button
+      on:click={() => setFocusedOption('KDB')}
+      class={`${focusedOption == 'KDB' ? 'text-blue-600  focus:text-blue-800 focus:border-blue-700 border-blue-500' : 'text-gray-500  hover:text-gray-700 hover:border-gray-300 focus:text-gray-700 focus:border-gray-300'} flex flex-col items-center justify-center p-3 text-xl font-medium border group focus:outline-none rounded-lg ml-2 w-24`}>
+      <svg
+        class={`${focusedOption == 'KDB' ? 'text-blue-600 focus:text-blue-800 focus:border-blue-700 border-blue-500' : 'text-gray-400 group-hover:text-gray-500 group-focus:text-gray-600'} w-8 h-8`}
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path
+          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2
+        2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+      </svg>
+      <span>kdb+</span>
     </button>
   </div>
   {#if isExpanded}

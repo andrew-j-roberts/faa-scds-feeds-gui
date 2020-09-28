@@ -4,6 +4,7 @@ import { useMachine } from "./useMachine";
 
 // feed caches
 export const fdpsFeedCache = writable({});
+export const distanceStatsCache = writable([]);
 
 // Google Maps
 export const mapCurrentSelection = writable(null);

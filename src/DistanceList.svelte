@@ -17,6 +17,7 @@
   <div class="ml-4 tracking-wider text-gray-500 uppercase w-28">Identifier</div>
   <div class="ml-4 tracking-wider text-gray-500 uppercase">Distance (km)</div>
 </div>
+
 <VirtualList
   items={$distanceStatsCache.sort((a, b) => {
     a.distance - b.distance;

@@ -20,3 +20,11 @@ export const solaceConfig = {
 //   SOLACE_USERNAME: "default",
 //   SOLACE_PASSWORD: "",
 // };
+
+// Demos infra
+// export const solaceConfig = {
+//   SOLACE_HOST_URL: "wss://mrm9980gjfm47.messaging.solace.cloud:443",
+//   SOLACE_MESSAGE_VPN: "demos-infra",
+//   SOLACE_USERNAME: "solace-cloud-client",
+//   SOLACE_PASSWORD: "mud4i06jmulo6aev7h1p6gb86l",
+// };
